@@ -1,56 +1,122 @@
-# Uber Mini Clone 🚗
+# 🚗 RideX – MERN Ride-Hailing App
 
-Full-stack Uber-like ride booking app with rider/driver flows, real-time matching (50km radius), maps, OTP security.
+> Full-stack ride-hailing web application built using the MERN stack with real-time tracking, authentication, and booking system.
 
-## Quick Start
+---
 
-### 1. Prerequisites
-- Node.js 18+
-- MongoDB (local `mongod` or MongoDB Atlas)
-- Copy `backend/.env.example` → `backend/.env` & update vars
+## 🌟 Features
 
-### 2. Backend Setup
-```bash
-cd backend
+* 🔐 User Authentication (Login / Signup)
+* 📍 Real-time Location Tracking
+* 🚕 Book a Ride Instantly
+* 🧭 Interactive Maps Integration
+* 💳 Ride Management System
+* 📊 Dashboard for Users
+* ⚡ Fast and Responsive UI
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* React.js
+* HTML5, CSS3, JavaScript
+
+### Backend
+
+* Node.js
+* Express.js
+
+### Database
+
+* MongoDB
+
+### Other Tools
+
+* Google Maps API 
+* JWT Authentication / Google Auth
+
+---
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the repository
+
+```
+git clone https://github.com/your-username/Uber-mini-MERN.git
+cd Uber-mini-MERN
+```
+
+### 2️⃣ Install dependencies
+
+#### Backend
+
+```
+cd server
 npm install
-# Copy .env.example → .env, set MONGO_URI & JWT_SECRET
+```
+
+#### Frontend
+
+```
+cd client
+npm install
+```
+
+### 3️⃣ Setup environment variables
+
+Create a `.env` file in the server folder and add:
+
+```
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+MAP_API_KEY=your_maps_api_key
+```
+
+### 4️⃣ Run the application
+
+#### Start backend
+
+```
+cd server
 npm start
 ```
-Server runs on http://localhost:5000
 
-### 3. Frontend Dev
-```bash
-npm install
-npm run dev
+#### Start frontend
+
 ```
-App at http://localhost:5173
-
-### 4. Test Flows
-1. **Rider**: Signup/Login → Home → Book ride (uses current loc/addresses)
-2. **Driver**: Signup (driver role + DL#) → /driver → Toggle \"Go online\" (shares loc) → Accept incoming → OTP verify → Route
-3. **Matching**: Auto-assigns nearest available driver within 50km
-4. **Maps**: Leaflet + OSRM routes, current geo prioritized
-
-## Troubleshooting 500 Errors
-```
-1. Start MongoDB: `mongod` (or set MONGO_URI=... in backend/.env)
-2. Backend: cd backend && npm start (check console for DB connect)
-3. Frontend connects automatically to localhost:5000
-4. Test API: http://localhost:5000/api/auth/health
+cd client
+npm start
 ```
 
-## Features Implemented ✅
-- Rider booking (50km max, vehicle types, live fares)
-- Driver dashboard (availability toggle, live GPS, accept/OTP/route)
-- Real-time polling (pending rides, driver loc)
-- Secure auth (JWT, bcrypt)
-- Maps: Geolocation, nominatim geocoding, OSRM shortest routes
-- Responsive UI (Tailwind, Framer Motion wheel/car anims)
+---
 
-## Tech Stack
-```
-Frontend: React 18 + Vite + Tailwind + Leaflet + Framer Motion
-Backend: Node/Express + MongoDB + JWT
-Utils: OSRM routing, haversine distance
-```
+## 📸 Screenshots
 
+> soon
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to fork the repo and submit a pull request.
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 👨‍💻 Author
+
+**Anshuman Hota**
+
+* GitHub:  [https://github.com/hotaanshuman4]
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
