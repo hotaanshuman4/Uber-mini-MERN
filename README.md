@@ -113,7 +113,7 @@ This project is licensed under the MIT License.
 
 **Anshuman Hota**
 
-* GitHub: [https://github.com/hotaanshuman4]
+* GitHub:  [https://github.com/hotaanshuman4]
 
 ---
 
